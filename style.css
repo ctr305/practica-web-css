@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 3px dashed black;
+}
+
+.header h1 {
+    max-width: calc(100% - 20px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul {
+    background-color: lightblue;
+    width: 100%;
+    overflow: hidden;
+}
+
+li {
+    background-color: lightblue;
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+
+.content {
+    background-color: green;
+    color: white;
+    min-height: 500px;
+    width: 70%;
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.article {
+    padding: 10px;
+    border-bottom: 2px solid limegreen;
+}
+
+@media all and (max-width: 768px) {
+    .article {
+        font-size: 0.8em;
+    }
+}
+
+.article:first-child {
+    border-top: 2px solid lightgreen;
+}
+
+.aside {
+    background-color: orange;
+    min-height: 500px;
+    width: 30%;
+    float: right;
+    text-overflow: ellipsis;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 768px) {
+    .aside {
+        font-size: 0.8em;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    clear: both;
+}
+
+@media (max-width: 160px) {
+    .footer {
+        font-size: 0.7em;
+    }
+}
